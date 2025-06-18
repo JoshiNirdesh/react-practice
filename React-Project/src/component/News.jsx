@@ -42,25 +42,16 @@ const News = () => {
       <div className="container my-3">
         <h2>Top Headline</h2>
         <div className="row">
-          <div className="col-md-4">
-            <Newsitem
-              title="this is my title"
-              description="this is my description"
-              imageUrl="https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg"
-            />
-          </div>
-          <div className="col-md-4">
-            <Newsitem
-              title="this is my title"
-              description="this is my description"
-            />
-          </div>
-          <div className="col-md-4">
-            <Newsitem
-              title="this is my title"
-              description="this is my description"
-            />
-          </div>
+          {articles.articles.map((e) => (
+            <div className="col-md-4">
+              <Newsitem
+                title={e.title.slice(0, 45)}
+                description={e.description.slice(0, 88)}
+                imageUrl={e.urlToImage}
+                newsUrl={e.url}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </>
