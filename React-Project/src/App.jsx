@@ -1,14 +1,13 @@
 import { useState } from "react";
 
 import "./App.css";
-import Navbar from "./component/Navbar";
-import Content from "./component/Content";
+
+import Header from "./component/Header";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Content />
+      <Header />
     </>
   );
 }

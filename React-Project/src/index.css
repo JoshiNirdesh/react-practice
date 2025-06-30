@@ -1,42 +1,19 @@
-body {
-  background-color: #282d35;
-  color: white;
-}
-nav {
-  display: flex;
-  align-items: center;
-  height: 100%;
+header {
+  background-color: #f55a5a;
 }
 header {
-  height: 90px;
-  background-color: #21222a;
-  padding: 30px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 55px;
 }
-nav img {
-  width: 40px;
+header img {
+  width: 28px;
   margin-right: 7px;
 }
-nav span {
-  color: #61dafb;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-main {
-  padding: 60px 30px;
-}
-main h1 {
-  margin: 0;
-  font-size: 2.4rem;
-}
-.facts {
-  margin-top: 46px;
-  max-width: 400px;
-}
-.facts li {
-  padding-block: 20px;
-  line-height: 19px;
-}
-.facts li::marker {
-  color: #61dafb;
-  font-size: 1.5rem;
+header h1 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 7px;
 }
