@@ -17,3 +17,35 @@ header h1 {
   font-weight: 500;
   margin-top: 7px;
 }
+.journal {
+  display: flex;
+}
+.main-image-container {
+  width: 125px;
+  height: 168px;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 19px;
+}
+.main-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.marker {
+  width: 20px;
+}
+article {
+  padding: 80px;
+}
+.country {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.title {
+  margin: 10px 0px;
+}
+.date {
+  font-weight: 600;
+}
