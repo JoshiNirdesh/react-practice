@@ -1,7 +1,14 @@
 import React from "react";
-
+import logo from "../assets/logo.svg";
 const Navbar = () => {
-  return <div>this is a navbar</div>;
+  return (
+    <header>
+      <nav>
+        <img src={logo} alt="React logo" />
+        <span>React Facts</span>
+      </nav>
+    </header>
+  );
 };
 
 export default Navbar;
