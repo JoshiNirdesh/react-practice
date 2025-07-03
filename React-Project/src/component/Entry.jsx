@@ -1,26 +1,19 @@
 import React from "react";
 import marker from "../assets/marker.png";
-const Entry = () => {
+const Entry = (props) => {
+  console.log(props);
   return (
     <article className="journal">
       <div className="main-image-container">
-        <img
-          className="main-image"
-          src="https://scrimba.com/links/travel-journal-japan-image-url"
-          alt=""
-        />
+        <img className="main-image" src={props.img.src} alt={props.img.alt} />
       </div>
       <div>
         <img className="marker" src={marker} alt="map" />
-        <span className="country">Japan</span>
+        <span className="country">{props.country}</span>
         <a href="">View on Google Maps</a>
-        <h2 className="title">Mount Fuji</h2>
-        <p className="date">12 Jan, 2021 - 24 Jan, 2021</p>
-        <p>
-          Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters
-          12,380 feet. Mount Fuji is the single most popular tourist site in
-          Japan, for both Japanese and foreign tourists.
-        </p>
+        <h2 className="title">{props.title}</h2>
+        <p className="date">{props.dates}</p>
+        <p>{props.text}</p>
       </div>
     </article>
   );
