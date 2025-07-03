@@ -12,12 +12,7 @@ function App() {
       <Header />
 
       {data.map((data) => (
-        <Entry
-          img={data.img}
-          title={data.title}
-          country={data.country}
-          text={data.text}
-        />
+        <Entry key={data.id} data={data} />
       ))}
     </>
   );

@@ -1,19 +1,22 @@
 import React from "react";
 import marker from "../assets/marker.png";
 const Entry = (props) => {
-  console.log(props);
   return (
     <article className="journal">
       <div className="main-image-container">
-        <img className="main-image" src={props.img.src} alt={props.img.alt} />
+        <img
+          className="main-image"
+          src={props.data.img.src}
+          alt={props.data.img.alt}
+        />
       </div>
       <div>
         <img className="marker" src={marker} alt="map" />
-        <span className="country">{props.country}</span>
+        <span className="country">{props.data.country}</span>
         <a href="">View on Google Maps</a>
-        <h2 className="title">{props.title}</h2>
-        <p className="date">{props.dates}</p>
-        <p>{props.text}</p>
+        <h2 className="title">{props.data.title}</h2>
+        <p className="date">{props.data.dates}</p>
+        <p>{props.data.text}</p>
       </div>
     </article>
   );
